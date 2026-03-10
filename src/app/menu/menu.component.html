@@ -1,0 +1,52 @@
+<ion-header>
+
+<ion-toolbar color="primary">
+<ion-title>DIY Video Ideas</ion-title>
+</ion-toolbar>
+
+<ion-toolbar>
+<ion-searchbar placeholder="Buscar manualidades..."></ion-searchbar>
+</ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+<!-- CATEGORIAS -->
+
+<div class="categorias">
+
+<ion-chip *ngFor="let c of categorias" color="primary" outline="true">
+<ion-label>{{c}}</ion-label>
+</ion-chip>
+
+</div>
+
+
+<!-- VIDEOS -->
+
+<ion-card *ngFor="let v of videos">
+
+<div class="imagen-container">
+
+<img [src]="v.imagen">
+
+<ion-icon name="heart-outline" class="fav"></ion-icon>
+
+</div>
+
+<ion-card-header>
+
+<ion-card-title>
+{{v.titulo}}
+</ion-card-title>
+
+<ion-card-subtitle>
+{{v.categoria}}
+</ion-card-subtitle>
+
+</ion-card-header>
+
+</ion-card>
+
+</ion-content>
