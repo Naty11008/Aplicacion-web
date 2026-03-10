@@ -1,0 +1,11 @@
+<ion-button id="present-alert">
+  CERRAR SESIÓN
+</ion-button>
+
+<ion-alert
+  trigger="present-alert"
+  header="¿ESTAS SEGURO?"
+  message="¿Seguro que deseas cerrar sesión?"
+  [buttons]="alertButtons"
+  (didDismiss)="setResult($event)">
+</ion-alert>

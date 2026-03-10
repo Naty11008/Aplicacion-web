@@ -1,3 +1,35 @@
-<p>
-  login works!
-</p>
+<ion-content class="login-content">
+
+  <div class="login-box" >
+
+    <h1>INICIAR SESIÓN</h1>
+
+    <ion-item>
+      <ion-input
+        label= "Correo:"
+        labelPlacement="stacked"
+        type="email"
+        placeholder="email@domain.com">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        label="Contraseña:"
+        labelPlacement="stacked"
+        type="password"
+        placeholder="Ingresa tu contraseña">
+      </ion-input>
+    </ion-item>
+
+    <ion-button class="sesion" expand="block">
+      Iniciar sesión
+    </ion-button>
+
+    <ion-text class="forgot">
+      <a href="#">¿Olvidaste tu contraseña?</a>
+    </ion-text>
+
+  </div>
+
+</ion-content>
